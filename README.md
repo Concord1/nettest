@@ -5,3 +5,4 @@ A simple app hosted on Netlify which displays the current gyroscopic orientation
 
 ![image](https://github.com/Concord1/nettest/assets/78932555/76398fcb-5e0e-4aeb-885c-c1e14db74c6f)
 
+<img src="](https://github.com/Concord1/nettest/assets/78932555/76398fcb-5e0e-4aeb-885c-c1e14db74c6f"  width="60%" height="30%">
