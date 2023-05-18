@@ -1,5 +1,3 @@
 # nettest
-https://app.netlify.com/sites/jolly-dodol-af03a9/overview
 https://jolly-dodol-af03a9.netlify.app/
-
-A simple Netlify site which (when run on mobile devices) displays the current gyroscopic orientation.
+A simple app hosted on Netlify which displays the current gyroscopic orientation of your device.
