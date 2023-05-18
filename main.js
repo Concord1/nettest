@@ -1,6 +1,7 @@
 function getAccel(){
   // Check for mobile user
-  if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
+  var mobileUser = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+  if(mobileUser){
     DeviceMotionEvent.requestPermission().then(response => {
         if (response == 'granted') {
             window.addEventListener('deviceorientation',(event) => {
