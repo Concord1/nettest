@@ -4,6 +4,7 @@ function getAccel(){
   var permission = 'granted';
   if(mobileUser){
     permission = DeviceMotionEvent.requestPermission();
+    document.write(permission);
   }
   if (permission == 'granted') {
       window.addEventListener('deviceorientation',(event) => {
