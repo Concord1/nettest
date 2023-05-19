@@ -12,6 +12,22 @@
               margin: 0 auto;
             }
          </style>
+           <script>
+    // Function to adjust page layout based on viewport height
+    function adjustLayout() {
+      var contentElement = document.getElementById('content');
+      var windowHeight = window.innerHeight;
+
+      // Set the height of the content element to fit the viewport
+      contentElement.style.height = windowHeight + 'px';
+    }
+
+    // Event listener for window resize
+    window.addEventListener('resize', adjustLayout);
+
+    // Initial adjustment on page load
+    adjustLayout();
+  </script>
          <script type = "text/javascript" src="main.js"></script>
     </head>
     <body style="background-color:lightblue;">
