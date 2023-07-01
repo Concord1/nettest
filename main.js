@@ -1,4 +1,16 @@
 function getAccel(){
+  // Fᴏʀᴄᴇ ʜᴛᴛᴘs
+  function checkHttps(req, res, next){
+  // protocol check, if http, redirect to https
+  
+  if(req.get('X-Forwarded-Proto').indexOf("https")!=-1){
+    return next()
+  } else {
+    res.redirect('https://' + req.hostname + req.url);
+  }
+}
+
+  
   // Check for mobile user
   var mobileUser = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
   var permis = 'granted';
